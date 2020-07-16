@@ -18,8 +18,8 @@ app.get("/", function(req, res){
 	res.render("./index");
 });
 
-app.get("/about", function(req, res){
-	res.render("about");
+app.get('/sitemap.xml', function(req, res) {
+	res.sendFile('sitemap.xml');
 });
 
 app.get("/contact_send", function(req, res){
